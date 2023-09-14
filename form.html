@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Web Development</title>
+    </head>
+
+    <body>
+       <form action="/" method="POST">
+            <div>
+                <label for="first_name" >Name</label>
+                <input type="text" id="first_name" placeholder="First Name">
+            </div> 
+
+            <div>
+                <label for="age" >Age</label>
+                <input type="number" id="age" placeholder="Age" min="18" max="65">
+            </div> 
+
+            <div>
+                <label for="date" >Date</label>
+                <input type="date" id="date" placeholder="MM/DD/YYYY">
+            </div> 
+
+            <div>
+                <label for="month" >Month</label>
+                <input type="month" id="month">
+            </div> 
+
+            <div>
+                <label for="week" >Week</label>
+                <input type="week" id="week">
+            </div> 
+
+            <div>
+                <label>Selecy Favorite Fruits</label>
+                <input type="radio" name="fruits" id="apple" checked>Apple
+                <input type="radio" name="fruits" id="banana">Banana
+                <input type="radio" name="fruits" id="orange">Orange
+            </div>
+
+            <div>
+                <label>Selecy Favorite Fruits</label>
+                <input type="checkbox" name="fruits" id="apple">Apple
+                <input type="checkbox" name="fruits" id="banana">Banana
+                <input type="checkbox" name="fruits" id="orange">Orange
+            </div>
+
+            <div>
+                <label for="color">Select Favorite color</label>
+                <input type="color" name="color" id="color" value="#eee">
+            </div>
+
+            <div>
+                <label for="">I am </label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">About</label>
+                <textarea name="about" id="about" cols="30" rows="10" style="vertical-align: top;" 
+                placeholder="Please write a feedback"></textarea>
+            </div>
+       </form>
+
+
+
+       <form action="/" method="GET">
+
+        <div>
+            <label for="email" >Email</label>
+            <input type="email" id="email" placeholder="test@gmail.com">
+        </div> 
+        <div>
+            <label for="password" >Password</label>
+            <input type="password" id="password" placeholder="please enter password">
+        </div> 
+
+        <div>
+            <!--- <input type="submit" value="submit"> --->
+            <button type="submit" style="background-color: darkgoldenrod; padding: 12px; border: 5px solid black;">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Click me</button>
+        </div>
+       </form>
+
+       <form action="/" method="GET">
+        <label for="brand">Select a brand</label>
+        <input type="text" name="brand" id="brand" list="brands">
+
+        <datalist id="brands">
+            <option value="Nike"></option>
+            <option value="Adidas"></option>
+            <option value="Apple"></option>
+            <option value="Sketchers"></option>
+            <option value="DKS"></option>
+        </datalist>
+
+       </form>
+    </body>
+</html>
